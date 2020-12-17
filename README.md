@@ -2,9 +2,18 @@
 
 This repo comprises the code for two papers [1, 2] by the Machine Vision ad Digital Health (MaViDH) research group, a collaboration between Charles Sturt University (Australia) and University of Technology Sydney.
 
-All steps are straightforwardly laid down on the Jupyter Notebooks, but there are different ways to run it. 
-The output folder has some pre-calculated feature values and selected and processed images, which are called in the "testbench_classificatin_analysis" notebook. Therefore, only this notebook is needed to visualize how the features are dealt while extracting the relevant features for ICU admission and correlation with the BIMCV data set. 
-To run the whole process from raw datasets to image processing and feature extraction, one will need to start on the "testbench_processing" notebook. 
+Since large data sets are required, the notebooks were made to allow two types of execution, one of which is simpler, using pre-calculated features. Moreover, as some images have been selected and gone to slight manual treatment, we have also the name of the files available for replication. The main notebooks for the features have the prefix "testbench" because that are many parameters and ways to set up the learning of models; they were then made to facilitate experimentation and tunning.
+
+For the simpler route, only the "testbench_classificatin_analysis" notebook is needed. It calls the pre-calculated files in the output directory and performs the learning and analyses.
+To run the whole process from raw datasets to image processing and feature extraction, one will need to start on the "testbench_processing" notebook and have the data sets, and libraries commented below. 
+
+Some noteworthy files from the output folder:
+* "hanno*" dirs - images selected from the Hanno data set for the severity work.
+* "not_went*" and "went*" dirs - images selected from the Cohen data set for the feature analysis work. 
+* "1-2_*_18feat*.csv" - pre-calculated feature from the Cohen selected images, used in the paper.
+* bim_file_names.txt - image names used in the analysis fro the BIMCV data set.
+* bimcv_full_18feat.csv - pre-calculated features from the BIMCV data set, used in the paper.
+* bimcv_labels_covid19_posi.tsv - metadata from the BIMCV.
 
 
 ## Libraries and data sets required
