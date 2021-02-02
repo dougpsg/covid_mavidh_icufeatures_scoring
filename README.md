@@ -7,15 +7,6 @@ Since large data sets are required, the notebooks were made to allow two types o
 For the simpler route, only the "testbench_classificatin_analysis" notebook is needed. It calls the pre-calculated files in the output directory and performs the learning and analyses.
 To run the whole process from raw datasets to image processing and feature extraction, one will need to start on the "testbench_processing" notebook and have the data sets, and libraries commented below. 
 
-Some noteworthy files from the output folder:
-* "hanno*" dirs - images selected from the Hanno data set for the severity work.
-* "not_went*" and "went*" dirs - images selected from the Cohen data set for the feature analysis work. 
-* "1-2_*_18feat*.csv" - pre-calculated feature from the Cohen selected images, used in the paper.
-* bim_file_names.txt - image names used in the analysis fro the BIMCV data set.
-* bimcv_full_18feat.csv - pre-calculated features from the BIMCV data set, used in the paper.
-* bimcv_labels_covid19_posi.tsv - metadata from the BIMCV.
-
-
 ## Libraries and data sets required
 
 This code is based on other remarkable work and public data sets in the literature. 
